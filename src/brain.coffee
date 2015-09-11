@@ -81,6 +81,7 @@ class Brain
   # * step = the recursion depth
   ##
   _getReply: (user, msg, context, step, scope) ->
+    console.log("[hiukim] _getReply");
     # Needed to sort replies?
     if not @master._sorted.topics
       @warn "You forgot to call sortReplies()!"
